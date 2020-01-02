@@ -1,0 +1,90 @@
+| students | CREATE TABLE `students` (
+  `sno` int(10) NOT NULL AUTO_INCREMENT,
+  `photo` varchar(100) DEFAULT NULL,
+  `fname` varchar(25) DEFAULT NULL,
+  `mname` varchar(25) DEFAULT NULL,
+  `lname` varchar(25) DEFAULT NULL,
+  `gender` varchar(25) DEFAULT NULL,
+  `class` varchar(20) DEFAULT NULL,
+  `section` char(4) DEFAULT NULL,
+  `address` varchar(50) DEFAULT NULL,
+  `date_of_birth` varchar(20) DEFAULT NULL,
+  `place_of_birth` varchar(50) DEFAULT NULL,
+  `phone` varchar(17) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `joined` varchar(50) NOT NULL,
+  `available` varchar(7) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`sno`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 |
+
+Create Table                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
++--------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| staffs | CREATE TABLE `staffs` (
+  `tno` varchar(11) NOT NULL,
+  `rno` varchar(11) DEFAULT NULL,
+  `photo` varchar(100) DEFAULT NULL,
+  `fname` varchar(25) DEFAULT NULL,
+  `mname` varchar(25) DEFAULT NULL,
+  `lname` varchar(25) DEFAULT NULL,
+  `gender` varchar(25) DEFAULT NULL,
+  `address` varchar(50) DEFAULT NULL,
+  `date_of_birth` varchar(20) DEFAULT NULL,
+  `place_of_birth` varchar(50) DEFAULT NULL,
+  `phone` varchar(17) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`tno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 |
+
+| Table   | Create Table                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
++---------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| parents | CREATE TABLE `parents` (
+  `pn` varchar(11) NOT NULL,
+  `photo` varchar(100) DEFAULT NULL,
+  `fname` varchar(25) DEFAULT NULL,
+  `mname` varchar(25) DEFAULT NULL,
+  `lname` varchar(25) DEFAULT NULL,
+  `gender` varchar(25) DEFAULT NULL,
+  `address` varchar(50) DEFAULT NULL,
+  `date_of_birth` varchar(50) DEFAULT NULL,
+  `phone` varchar(17) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`pn`)
+
+  | Table   | Create Table                                                                                                                                                |
++---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| section | CREATE TABLE `section` (
+  `scno` varchar(10) NOT NULL,
+  `scname` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`scno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 |
++---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.000 sec)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 |
+
+| Table     | Create Table                                                                                                                                               |
++-----------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| staffrole | CREATE TABLE `staffrole` (
+  `rno` varchar(11) NOT NULL,
+  `rname` varchar(25) DEFAULT NULL,
+  PRIMARY KEY (`rno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 |
++-----------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.000 sec)
+
+| Table   | Create Table                                                                                                                                                |
++---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| subject | CREATE TABLE `subject` (
+  `suno` varchar(11) NOT NULL,
+  `suname` varchar(25) DEFAULT NULL,
+  PRIMARY KEY (`suno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 |
++---------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.000 sec)
+
+| Table | Create Table                                                                                                                                           |
++-------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+| class | CREATE TABLE `class` (
+  `cno` varchar(11) NOT NULL,
+  `cname` varchar(25) DEFAULT NULL,
+  PRIMARY KEY (`cno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 |
